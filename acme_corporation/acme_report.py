@@ -52,9 +52,9 @@ def inventory_report(products):
     mean_price = sum(price_list) / len(price_list)
     mean_flammability = sum(flammability_list) / len(flammability_list)
     print(f"ACME INVENTORY REPORT Unique Products = {uniques} \n",
-           "Average Price = {mean_price} \n",
-           "Average Weight = {mean_weight} \n",
-           "Average Flammability = {mean_flammability}")
+           f"Average Price = {mean_price} \n",
+           f"Average Weight = {mean_weight} \n",
+           f"Average Flammability = {mean_flammability}")
 
 if __name__ == '__main__':
     inventory_report(generate_products())
